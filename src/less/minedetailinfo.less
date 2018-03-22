@@ -1,0 +1,294 @@
+@backColor: #009688;
+@iconColor: #ff3f80;
+.main{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+/**----------------------------------------------------------------------mine------------------------------------------------------------------------**/
+.mine{
+	position: relative;
+	width: 100%;
+	// height: 100px;
+	background: #fff;
+}
+
+/**----------------------------------------------------------------------mineheader------------------------------------------------------------------------**/
+.mineheader{
+	// border-bottom: 106px solid rgba(0, 0, 0, 0);
+	width: 750px;
+	// height: 170px;
+	margin: 0 auto;
+	padding: 25px 22px;
+	background: rgba(0, 0, 0, 0);
+	border-bottom: 2px solid #e6e6e6;
+
+	>div{
+		float: left;
+	}
+
+	>.minepic{
+		width: 154px;
+		height: 154px;
+
+		>img{
+			width: 100%;
+			height: 100%;
+			border-radius: 50% 50%;
+		}
+	}
+
+	>.mineinfo{
+		>span{
+			font-size: 30px;
+			color: #212121;
+			padding-left: 30px;
+			padding-top: 10px;
+			display: block;
+			line-height: 1;
+		}
+
+		>label{
+			display: table;
+			font-size: 18px;
+			background: @backColor;
+			border-radius: 4px;
+			color: #fff;
+			margin-left: 30px;
+			margin-top: 16px;
+			padding: 6px 8px;
+			line-height: 1;
+		}
+
+		>p{
+			margin-top: 33px;
+
+			>span{
+				float: left;
+				font-size: 26px;
+				color: #9a9a9a;
+				padding-left: 30px;
+				line-height: 1;
+
+				>b{
+					font-weight: 500;
+					padding-left: 10px;
+					color: #212121;
+				}
+			}
+		}
+	}
+}
+
+/**----------------------------------------------------------------------mineorder------------------------------------------------------------------------**/
+.mineorder{
+	width: 750px;
+	margin: 0 auto;
+	border-bottom: 20px solid #e6e6e6;
+
+	>p{
+		position: relative;
+		width: 25%;
+		border-right: 1px solid #fff;
+		float: left;
+		font-size: 26px;
+		text-align: center;
+		// background: #e0e0e0;
+		cursor: pointer;
+		color: #9a9a9a;
+		padding-top: 40px;
+
+		>strong{
+			font-size: 36px;
+			font-weight: normal;
+			display: block;
+			line-height: 1;
+		}
+
+		>span{
+			display: inline-block;
+			padding: 20px 0 35px 0;
+		}
+
+		>b{
+			position: absolute;
+			top: 50%;
+			// right: 5px;
+			margin-top: 20px;
+			padding: 9px 9px;
+			background: #ff3f80;
+			border-radius: 50% 50%;
+			transform: translateY(-100%);
+			-ms-transform: translateY(-100%); 	/* IE 9 */
+			-moz-transform: translateY(-100%); 	/* Firefox */
+			-webkit-transform: translateY(-100%); /* Safari 和 Chrome */
+			-o-transform: translateY(-100%); 	/* Opera */
+		}
+	}
+	>p:last-child{
+		border-right: none;
+	}
+
+	>p:hover{
+		// background: #fff;
+	}
+
+	>p.active{
+		>strong{
+			color: @backColor;
+		}
+
+		>span{
+			border-bottom: 4px solid @backColor;
+			color: @backColor;
+		}
+	}
+}
+
+/**----------------------------------------------------------------------comment------------------------------------------------------------------------**/
+.public{
+	width: 750px;
+	margin: 0 auto;
+
+	>ul{
+		>li{
+			list-style: none;
+			border-bottom: 1px solid #e0e0e0;
+			padding: 36px 0;
+
+			>p{
+				padding: 30px 22px 0 22px;
+			}
+			>p.datetime{
+				font-size: 22px;
+				color: #a9a9a9;
+				padding-top: 0;
+			}
+			>p.miancomment{
+				font-size: 30px;
+
+				img[name=smilies]{
+					width: 50px;
+					height: 50px;
+					margin-bottom: -10px;
+				}
+
+				img[name=emojis]{
+					width: 50px;
+					height: 50px;
+					margin-bottom: -10px;
+				}
+			}
+			>p.whichtopic{
+				font-size: 26px;
+				color: #9a9a9a;
+				>span{}
+
+				>b{
+					font-weight: 500;
+					padding-left: 10px;
+				}
+			}
+		}
+	}
+
+	>.noContent{
+		width: 100%;
+		position: relative;
+		top: 0;
+		text-align: center;
+
+		>span{
+			width: 330px;
+			height: auto;
+			display: block;
+			position: relative;
+			margin: 150px auto 60px auto;
+
+			>img{
+				width: 330px;
+			}
+		}
+
+		>p{
+			color: #adadad;
+			font-size: 26px;
+			padding-bottom: 40px;
+		}
+	}
+}
+
+
+/**----------------------------------------------------------------------tips------------------------------------------------------------------------**/
+.tips{
+	position: fixed;
+	width: 750px;
+	height: 100%;
+	top: 0;
+	background: rgba(0, 0, 0, 0.3);
+	margin: 0 auto;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%); 	/* IE 9 */
+	-moz-transform: translateX(-50%); 	/* Firefox */
+	-webkit-transform: translateX(-50%); /* Safari 和 Chrome */
+	-o-transform: translateX(-50%); 	/* Opera */
+
+	.tip_box{
+		width: 538px;
+		// height: 222px;
+		background: #fff;
+		text-align: center;
+		z-index: 1;
+		position: fixed;
+		border-radius: 30px 30px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%); 	/* IE 9 */
+		-moz-transform: translate(-50%, -50%); 	/* Firefox */
+		-webkit-transform: translate(-50%, -50%); /* Safari 和 Chrome */
+		-o-transform: translate(-50%, -50%); 	/* Opera */
+
+		>span{
+			position: relative;
+			font-size: 32px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			display: block; 
+			font-weight: 900;
+			border-bottom: 1px solid #e0e0e0;
+		}
+
+		>p{
+			position: relative;
+			font-size: 30px;
+			height: 90px;
+			color: #fff;
+
+			>input{
+				width: 50%;
+				height: 100%;
+				position: absolute;
+				background: #fff;
+				color: #009688;
+				font-size: 32px;
+				font-weight: 900;
+			}
+
+			>input[name=cancel]{
+				left: 0;
+				border-radius: 0 0 0 30px;
+				border-right: 1px solid #e0e0e0;
+			}
+
+			>input[name=confirm]{
+				right: 0;
+				border-radius: 0 0 30px 0;
+			}	
+		}
+	}
+}

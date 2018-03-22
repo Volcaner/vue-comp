@@ -1,0 +1,62 @@
+@backColor: #009688;
+@iconColor: #ff3f80;
+
+/*--------------------------------chooseTip---------------------------------*/
+.chooseTip{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 750px;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%); 	/* IE 9 */
+	-moz-transform: translateX(-50%); 	/* Firefox */
+	-webkit-transform: translateX(-50%); /* Safari 和 Chrome */
+	-o-transform: translateX(-50%); 	/* Opera */
+	z-index: 99;
+
+	>.choTipBox{
+		position: relative;
+		background: #fff;
+		max-width: 80%;
+		display: block;
+		margin: 0 auto;
+		top: 50%;
+		transform: translateY(-50%);
+		-ms-transform: translateY(-50%); 	/* IE 9 */
+		-moz-transform: translateY(-50%); 	/* Firefox */
+		-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+		-o-transform: translateY(-50%); 	/* Opera */
+		border-radius: 20px 20px;
+
+		>p{
+			font-size: 32px;
+			padding: 50px 130px;
+			// font-weight: 900;
+			color: #000;
+			text-align: center;
+			border-bottom: 1px solid #e0e0e0;
+		}
+
+		>span {
+			float: left;
+			width: 50%;
+			color: @backColor;
+			font-size: 32px;
+			// font-weight: 900;
+			text-align: center;
+			padding: 30px 0;
+			// border-right: 1px solid #e0e0e0;
+		}
+
+		>span:nth-child(2) {
+			border-right: 1px solid #e0e0e0;
+		}
+
+		>span:active{
+			background: rgba(0, 0, 0, 0.1);
+		}
+	}
+}

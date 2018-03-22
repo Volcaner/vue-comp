@@ -1,0 +1,348 @@
+@backColor: #009688;
+@iconColor: #ff3f80;
+.main{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+/**----------------------------------------------------------------------topic------------------------------------------------------------------------**/
+.topic{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+.issuearea{
+	position: relative;
+	width: 750px;
+	min-height: 100%;
+	margin: 0 auto 0 auto;
+
+	>div.title_input{
+		border-bottom: 18px solid #efefef;
+		padding: 23px 23px 5px 23px;
+
+		>textarea{
+			font-size: 32px;
+			width: 100%;
+		}
+
+		>p{
+			height: 32px;
+
+			>span{
+				font-size: 30px;
+				float: right;
+				color: #adadad;
+			}
+		}
+	}
+
+	>div.content_input{
+		border-bottom: 2px solid #efefef;
+		padding: 23px 23px 5px 23px;
+
+		>textarea{
+			font-size: 32px;
+			width: 100%;
+		}
+
+		>.conBox{
+			font-size: 32px;
+			width: 100%;
+			min-height: 260px;
+			overflow-y: auto;
+			background: rgba(0, 0, 0, 0);
+
+			img[name=images]{
+				max-width: 200px;
+				max-height: 200px;
+			}
+
+			img[name=smilies]{
+				width: 50px;
+				height: 50px;
+			}
+
+			img[name=emojis]{
+				width: 50px;
+				height: 50px;
+			}
+		}
+	}
+
+	>div.pics_input{
+		position: relative;
+		bottom: 0;
+		background: #fff;
+		border-bottom: 18px solid #efefef;
+		margin-bottom: 108px;
+		// border-bottom: 2px solid #efefef;
+		// padding: 23px 23px 23px 23px;
+
+		>.select_mode{
+			position: relative;
+			padding: 23px 23px;
+
+			>a{
+				position: relative;
+				font-size: 52px;
+				color: #adadad;
+				overflow: hidden;
+				text-decoration: none;
+			    text-indent: 0;
+				>input{
+					position: absolute;
+					width: 52px;
+					height: 52px;
+					font-size: 30px;
+					top: 0;
+					left: 0;
+					opacity: 0;
+					z-index: 99;
+				}
+			}
+
+			>span{
+				font-size: 52px;
+				color: #adadad;
+				margin-right: 40px;
+			}
+		}
+
+		>.select_look{
+			padding: 23px 23px;
+			background: #efefef;
+			border-bottom: 108px solid rgba(0, 0, 0, 0);
+
+			>span{
+				font-size: 30px;
+			}
+
+			>table{
+				width: 100%;
+				padding-top: 23px;
+				>tbody{
+					>tr{
+						>td{
+							list-style: none;
+							// display: inline-block;
+							float: left;
+							width: 16.66666%;
+							max-height: 114px;
+							border: 1px solid #e0e0e0;
+
+							>img{
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		>.preview{
+			position: relative;
+			padding: 23px 23px;
+
+			>ul{
+				width: 100%;
+				>li{
+					position: relative;
+					list-style: none;
+					width: 25%;
+					min-height: 150px;
+					max-height: 170px;
+					float: left;
+					padding: 2px 2px;
+
+					>div{
+						position: absolute;
+						width: 95%;
+						height: 95%;
+						margin: 0 auto;
+						display: block;
+						overflow: hidden;
+
+						>img{
+							position: relative;
+							margin: 0 auto;
+							display: block;
+							max-width: 150px;
+							min-width: 120px;
+						}
+					}
+
+					>b{
+						position: absolute;
+						font-size: 30px;
+						top: -10px;
+						right: -10px;
+						color: red;
+						transform: rotate(45deg);
+						-ms-transform: rotate(45deg); 	/* IE 9 */
+						-moz-transform: rotate(45deg); 	/* Firefox */
+						-webkit-transform: rotate(45deg); /* Safari 和 Chrome */
+						-o-transform: rotate(45deg); 	/* Opera */
+						z-index: 1;
+					}
+				}
+			}
+		}
+	}
+
+	>div.control{
+		padding: 23px 23px 0 23px;
+		// border-bottom: 18px solid #efefef;
+		padding-bottom: 126px;
+		margin-top: -108px;
+
+		>p{
+			line-height: 1;
+			padding-bottom: 20px;
+
+			 >label{
+			 	font-size: 30px;
+			 	color: #adadad;
+			 	float: left;
+
+			 	>input[type=checkbox]{
+				 	width: 25px;
+				 	height: 25px;
+				 	appearance: checkbox;
+					-moz-appearance: checkbox; /* Firefox */
+					-webkit-appearance: checkbox; /* Safari 和 Chrome */
+					margin-right: 10px;
+				 }
+
+				 >b{
+				 	font-weight: 500;
+				 }
+			 }
+
+			 >b{
+			 	color: @iconColor;
+			 	font-size: 24px;
+			 	display: block;
+			 }
+
+			 >span{
+			 	color: #adadad;
+			 	font-size: 24px;
+			 	display: block;
+			 }
+		}
+
+		>p.note{
+			line-height: 1.5;
+		}
+	}
+}
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	height: 108px;
+	width: 100%;
+	background: #e0e0e0;
+	// padding: 18px 0;
+	margin-top: -108px;
+
+	>div.submit_btn{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background: #009688;
+		text-align: center;
+
+		>span{
+			line-height: 106px;
+			height: 100%;
+			font-size: 32px;
+			color: #fff;
+		}
+	}
+}
+
+/**----------------------------------------------------------------------tips------------------------------------------------------------------------**/
+.tips{
+	position: fixed;
+	width: 750px;
+	height: 100%;
+	top: 0;
+	background: rgba(0, 0, 0, 0.5);
+	margin: 0 auto;
+	left: 50%;
+	z-index: 2;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%); 	/* IE 9 */
+	-moz-transform: translateX(-50%); 	/* Firefox */
+	-webkit-transform: translateX(-50%); /* Safari 和 Chrome */
+	-o-transform: translateX(-50%); 	/* Opera */
+
+	.tip_box{
+		// width: 538px;
+		// height: 222px;
+		padding: 64px 64px;
+		background: #fff;
+		text-align: center;
+		z-index: 1;
+		position: fixed;
+		border-radius: 30px 30px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%); 	/* IE 9 */
+		-moz-transform: translate(-50%, -50%); 	/* Firefox */
+		-webkit-transform: translate(-50%, -50%); /* Safari 和 Chrome */
+		-o-transform: translate(-50%, -50%); 	/* Opera */
+
+		>span{
+			position: relative;
+			font-size: 32px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			display: block; 
+			font-weight: 900;
+			border-bottom: 1px solid #e0e0e0;
+		}
+
+		>p{
+			position: relative;
+			font-size: 30px;
+			height: 90px;
+			color: #fff;
+
+			>input{
+				width: 50%;
+				height: 100%;
+				position: absolute;
+				background: #fff;
+				color: #009688;
+				font-size: 32px;
+				font-weight: 900;
+			}
+
+			>input[name=cancel]{
+				left: 0;
+				border-radius: 0 0 0 30px;
+				border-right: 1px solid #e0e0e0;
+			}
+
+			>input[name=confirm]{
+				right: 0;
+				border-radius: 0 0 30px 0;
+			}	
+		}
+
+		>img{
+			display: block;
+			width: 64px;
+			height: 64px;
+		}
+	}
+}

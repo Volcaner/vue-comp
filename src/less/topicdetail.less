@@ -1,0 +1,451 @@
+@backColor: #009688;
+@iconColor: #ff3f80;
+.main{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+/**----------------------------------------------------------------------topicdetail------------------------------------------------------------------------**/
+.topicdetail{
+	position: relative;
+	width: 100%;
+	// height: 100px;
+	background: #fff;
+
+	border-bottom: 108px solid rgba(0, 0, 0, 0);
+}
+
+/**----------------------------------------------------------------------topic------------------------------------------------------------------------**/
+.topic{
+	border-bottom: 20px solid #eaeaea;
+	width: 750px;
+	margin: 0 auto;
+	padding: 36px 0;
+
+
+	>div.foruser{
+		padding: 0 22px 25px 22px;
+		margin-bottom: 25px;
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	>div.user_article{
+		>.videoShow{
+			position: relative;
+			width: 706px;
+			height: 529.5px;
+			margin: 0 22px 36px 22px;
+			background: #000;
+			overflow: hidden;
+			// z-index: -1;
+			
+			>.v_box{
+				position: absolute;
+				width: 750px;
+				height: 562.5px;
+				overflow: hidden;
+				bottom: 0;
+
+				>video{
+					position: relative;
+					display: block;
+					width: 706px;
+					height: 529.5px;
+					margin: 0 auto;
+					// object-fit: contain !important;
+				}
+			}
+
+			>.v_pre{
+				position: absolute;
+				width: 706px;
+				height: 529.5px;
+
+				>img{
+					position: absolute; 
+					width: 100%; 
+					height: 100%; 
+					top: 0;
+				}
+
+				>span{
+					position: absolute;
+					display: block;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					-ms-transform: translate(-50%, -50%); 	/* IE 9 */
+					-moz-transform: translate(-50%, -50%); 	/* Firefox */
+					-webkit-transform: translate(-50%, -50%); /* Safari 和 Chrome */
+					-o-transform: translate(-50%, -50%); 	/* Opera */
+					font-size: 140px;
+					font-weight: 400;
+					color: #fff;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+/**----------------------------------------------------------------------discuss------------------------------------------------------------------------**/
+.discuss{
+	width: 750px;
+	margin: 0 auto;
+
+	>div.discuss_order{
+		position: relative;
+		width: 100%;
+		// padding-bottom: 25px;
+		border-bottom: 1px solid #e6e6e6;
+
+		>p{
+			position: relative;
+			font-size: 28px;
+			margin-left: 35px;
+			font-weight: 900;
+			padding: 25px 0;
+			line-height: 1;
+			float: left;
+			border-bottom: 5px solid rgba(0,0,0,0);
+		}
+
+		>p.active{
+			color: #009688;
+			border-bottom: 5px solid #009688;
+		}
+	}
+
+	>div.reply_cls{
+		// margin-bottom: 108px;
+		width: 100%;
+		position: relative;
+		top: 0;
+		// position: absolute;
+		// height: 100px;
+		// background: #aaa;
+
+		>ul{
+			>li{
+				list-style: none;
+				border-bottom: 1px solid #e0e0e0;
+				padding: 20px 0;
+			}
+		}
+	}
+
+	>div.allreply{
+	}
+
+	>div.lzreply{
+	}
+
+	>div.noreplay{
+		width: 100%;
+		position: relative;
+		top: 0;
+		text-align: center;
+
+		>span{
+			width: 228px;
+			height: auto;
+			display: block;
+			position: relative;
+			margin: 80px auto 40px auto;
+
+			>img{
+				width: 228px;
+			}
+		}
+
+		>p{
+			color: #adadad;
+			font-size: 26px;
+			padding-bottom: 40px;
+		}
+	}
+}
+
+/**----------------------------------------------------------------------footer------------------------------------------------------------------------**/
+.footer{
+	// height: 108px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #f4f4f4;
+
+	>div{
+		position: relative;
+		width: 100%;
+		// height: 100%;
+		// display: table-cell;
+		// vertical-align: middle;
+		
+		>span:first-child{
+			position: absolute;
+			width: 15%;
+			font-size: 60px;
+			color: #A6A6A6;
+			text-align: center;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			-ms-transform: translateY(-50%); 	/* IE 9 */
+			-moz-transform: translateY(-50%); 	/* Firefox */
+			-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+			-o-transform: translateY(-50%); 	/* Opera */
+		}
+
+		>textarea, pre{
+			width: 65%;
+			font-size: 30px;
+			color: #bbbbbb;
+			line-height: 59px;
+			border-radius: 10px;
+			word-wrap: break-word;
+			display: block;
+			left: 15%;
+			// top: 50%;
+			// transform: translateY(-50%);
+			// -ms-transform: translateY(-50%); 	/* IE 9 */
+			// -moz-transform: translateY(-50%); 	/* Firefox */
+			// -webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+			// -o-transform: translateY(-50%); 	/* Opera */
+		}
+
+		>textarea{
+			position: relative;
+			height: 60px;
+			max-height: 264px;
+			margin: 26px 0;
+			border: solid 1px #e0e0e0;
+		}
+
+		>pre{
+			position: absolute;
+			min-height: 60px;
+			top: 0;
+			visibility: hidden;
+			white-space:pre-wrap;
+			white-space:-moz-pre-wrap;
+			white-space:-pre-wrap;
+			white-space:-o-pre-wrap;
+			word-wrap:break-word;
+		}
+
+		>.conBox{
+			width: 65%;
+			font-size: 30px;
+			color: #bbbbbb;
+			line-height: 48px;
+			border-radius: 10px;
+			word-wrap: break-word;
+			display: block;
+			left: 15%;
+			position: relative;
+			min-height: 60px;
+			max-height: 264px;
+			margin: 26px 0;
+			border: solid 1px #e0e0e0;
+			overflow: auto;
+			background: #fff;
+			padding: 5px 5px;
+
+			img[name=smilies]{
+				width: 50px;
+				height: 50px;
+				margin-bottom: -10px;
+			}
+
+			img[name=emojis]{
+				width: 50px;
+				height: 50px;
+				margin-bottom: -10px;
+			}
+		}
+
+		>span:last-child{
+			position: absolute;
+			width: 15%;
+			font-size: 30px;
+			line-height: 60px;
+			border: solid 1px #e0e0e0;
+			border-radius: 5px;
+			background: #fff;
+			color: @backColor;
+			text-align: center;
+			right: 2%;
+			top: 50%;
+			transform: translateY(-50%);
+			-ms-transform: translateY(-50%); 	/* IE 9 */
+			-moz-transform: translateY(-50%); 	/* Firefox */
+			-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+			-o-transform: translateY(-50%); 	/* Opera */
+		}
+	}
+}
+
+/**----------------------------------------------------------------------replysb------------------------------------------------------------------------**/
+.replysb{
+	position: fixed;
+	width: 750px;
+	height: 100%;
+	top: 0;
+	background: rgba(0, 0, 0, 0);
+	margin: 0 auto;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%); 	/* IE 9 */
+	-moz-transform: translateX(-50%); 	/* Firefox */
+	-webkit-transform: translateX(-50%); /* Safari 和 Chrome */
+	-o-transform: translateX(-50%); 	/* Opera */
+
+	>div.reply_input{
+		position: fixed;
+		height: 525px;
+		bottom: 108px;
+		background: #fff;
+		width: 100%;
+
+		>div.insertwords{
+			position: absolute;
+			width: 100%;
+			padding: 35px 23px;
+
+			>textarea{
+				width: 100%;
+				font-size: 32px;
+				color: #bbbbbb;
+				line-height: 64px;
+				border-radius: 10px;
+			}
+		}
+
+		>div.insertpics{
+			position: fixed;
+			width: 100%;
+			padding: 0 23px;
+			bottom: 108px;
+			border-top: 1px solid #e0e0e0;
+
+			>p{
+				float: left;
+				font-size: 52px;
+				margin: 28px 0;
+				margin-right: 85px;
+				color: #adadad;
+			}
+
+			>.emoticon{
+				
+			}
+
+			>.picture{
+				
+			}
+		}
+	}
+
+	>div.reply_footer{
+		position: fixed;
+		height: 108px;
+		bottom: 0;
+		width: 100%;
+
+		>input{
+			position: absolute;
+			height: 100%;
+			text-align: center;
+			color: #fff;
+			font-size: 32px;
+		}
+
+		>input[name=submit]{
+			width: 70%;
+			left: 0;
+			background: #009688;
+		}
+
+		>input[name=cancel]{
+			width: 30%;
+			right: 0;
+			background: #757575;
+		}
+	}
+}
+
+/**----------------------------------------------------------------------tips------------------------------------------------------------------------**/
+.tips{
+	position: fixed;
+	width: 750px;
+	height: 100%;
+	top: 0;
+	background: rgba(0, 0, 0, 0.3);
+	margin: 0 auto;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%); 	/* IE 9 */
+	-moz-transform: translateX(-50%); 	/* Firefox */
+	-webkit-transform: translateX(-50%); /* Safari 和 Chrome */
+	-o-transform: translateX(-50%); 	/* Opera */
+
+	.tip_box{
+		width: 538px;
+		// height: 222px;
+		background: #fff;
+		text-align: center;
+		z-index: 1;
+		position: fixed;
+		border-radius: 30px 30px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%); 	/* IE 9 */
+		-moz-transform: translate(-50%, -50%); 	/* Firefox */
+		-webkit-transform: translate(-50%, -50%); /* Safari 和 Chrome */
+		-o-transform: translate(-50%, -50%); 	/* Opera */
+
+		>span{
+			position: relative;
+			font-size: 32px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			display: block; 
+			font-weight: 900;
+			border-bottom: 1px solid #e0e0e0;
+		}
+
+		>p{
+			position: relative;
+			font-size: 30px;
+			height: 90px;
+			color: #fff;
+
+			>input{
+				width: 50%;
+				height: 100%;
+				position: absolute;
+				background: #fff;
+				color: #009688;
+				font-size: 32px;
+				font-weight: 900;
+			}
+
+			>input[name=cancel]{
+				left: 0;
+				border-radius: 0 0 0 30px;
+				border-right: 1px solid #e0e0e0;
+			}
+
+			>input[name=confirm]{
+				right: 0;
+				border-radius: 0 0 30px 0;
+			}	
+		}
+	}
+}
+
+@import 'aliplayer-min.less';

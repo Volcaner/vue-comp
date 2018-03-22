@@ -1,0 +1,100 @@
+/***************************emoji****************************/
+.emoji{
+	// border-bottom: 108px solid rgba(0, 0, 0, 0);
+	background: #fff;
+}
+
+.emojiBox{
+	width: 100%;
+	min-height: 100px;
+	overflow: hidden; 
+}
+.emActive{
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+}
+.emojiTitle{
+	white-space: nowrap;
+	overflow-x: auto;
+	// margin-bottom: 23px;
+	padding: 10px 0;
+	background: #efefef;
+	border-left: 23px solid #efefef;
+	border-right: 23px solid #efefef;
+
+	>.emojisTitle{
+		float: left;
+
+		>ul{
+			display: flex;
+
+			>li{
+				float: left;
+				font-size: 24px;
+				line-height: 24px;
+				padding: 10px 20px;
+				margin: 5px 15px;
+				border-radius: 30px 30px;
+				// color: #000;
+			}
+		}
+	}
+
+	>.smiliesTitle{
+		// float: left;
+
+		>ul{
+			display: flex;
+
+			>li{
+				float: left;
+				font-size: 24px;
+				line-height: 24px;
+				padding: 10px 20px;
+				margin: 5px 15px;
+				border-radius: 30px 30px;
+				// color: #000;
+			}
+		}
+	}
+}
+
+.emojiCon{
+	padding: 23px 23px;
+
+	>ul{
+		max-height: 390px;
+		overflow-y: auto;
+
+		>li{
+			
+			>ul{
+				// display: flex;
+				// justify-content: space-between;
+
+				>li{
+					float: left;
+					width: 80px;
+					height: 80px;
+					margin-bottom: 17.5px;
+					margin-right: 24px;
+					padding: 15px 15px;
+					border-radius: 15px;
+
+					>img{
+						width: 50px;
+						height: 50px;
+					}
+				}
+
+				>li:last-child{
+					margin-right: 0;
+				}
+
+				>li:active{
+					background: rgba(0, 0, 0, 0.1);
+				}
+			}
+		}
+	}
+}

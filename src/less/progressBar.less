@@ -1,0 +1,47 @@
+@backColor: #009688;
+@iconColor: #ff3f80;
+
+/*--------------------------------chooseTip---------------------------------*/
+.proBar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 750px;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%); 	/* IE 9 */
+	-moz-transform: translateX(-50%); 	/* Firefox */
+	-webkit-transform: translateX(-50%); /* Safari 和 Chrome */
+	-o-transform: translateX(-50%); 	/* Opera */
+	z-index: 99;
+
+	>.progress_box{
+		position: relative;
+		background: rgba(0255, 255, 255, 0.6);
+		width: 80%;
+		height: 20px;
+		border: 1px solid #fff;
+		display: block;
+		margin: 0 auto;
+		top: 50%;
+		transform: translateY(-50%);
+		-ms-transform: translateY(-50%); 	/* IE 9 */
+		-moz-transform: translateY(-50%); 	/* Firefox */
+		-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+		-o-transform: translateY(-50%); 	/* Opera */
+		border-radius: 20px 20px;
+		overflow: hidden;
+
+		>.bar_box{
+			position: relative;
+			width: 0;
+			height: 100%;
+			background: url("./../images/icons_7.png");
+			background-size: auto 20px;
+			background-repeat: repeat-x;
+			border-radius: 20px 20px;
+		}
+	}
+}

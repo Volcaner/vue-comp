@@ -1,0 +1,338 @@
+@backColor: #009688;
+@iconColor: #ff3f80;
+.main{
+	position: relative;
+	width: 750px;
+	height: 100%;
+	margin: 0 auto;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+/**----------------------------------------------------------------------topic------------------------------------------------------------------------**/
+.topic{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+.issuearea{
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+
+	>.video_input{
+		position: relative;
+		width: 750px;
+		height: 645px;
+
+		>ul{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			border-bottom: solid 20px #efefef; 
+
+			>li{
+				position: relative;
+				width: 50%;
+				height: 280px;
+				float: left;
+				margin: 140px 0;
+
+				>input{
+					position: absolute;
+					width: 280px;
+					height: 280px;
+					display: block;
+					opacity: 0;
+					top: 0;
+					left: 50%;
+					transform: translateX(-50%);
+					-ms-transform: translateX(-50%); 	/* IE 9 */
+					-moz-transform: translateX(-50%); 	/* Firefox */
+					-webkit-transform: translateX(-50%); /* Safari 和 Chrome */
+					-o-transform: translateX(-50%); 	/* Opera */
+				}
+
+				>p{
+					position: absolute;
+					top: 0;
+					left: 50%;
+					width: 280px;
+					height: 280px;
+					display: block;
+					font-size: 30px;
+					text-align: center;
+					border: 2px dashed @backColor;
+					border-radius: 10px;
+					transform: translateX(-50%);
+					-ms-transform: translateX(-50%); 	/* IE 9 */
+					-moz-transform: translateX(-50%); 	/* Firefox */
+					-webkit-transform: translateX(-50%); /* Safari 和 Chrome */
+					-o-transform: translateX(-50%); 	/* Opera */
+					padding-top: 65px;
+
+					>span{
+						font-size: 24px;
+						display: block;
+						color: @backColor;
+						padding: 0 10px 20px 10px;
+					}
+
+					>span:first-child{
+						font-size: 50px;
+					}
+
+					>span:last-child{
+						font-size: 20px;
+						padding-bottom: 0;
+					}
+				}
+			}
+		}
+
+		>.video_pre{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			background: #000;
+			border-bottom: solid 20px #efefef; 
+
+			>div.video_box{
+				position: absolute;
+				width: 750px;
+				height: 562.5px;
+				overflow: hidden;
+				bottom: 0;
+
+				>video{
+					position: relative;
+					display: block;
+					width: 750px;
+					height: 562.5px;
+					margin: 0 auto;
+				}
+
+				// >embed{
+				// 	position: relative;
+				// 	width: 750px;
+				// 	height: 562.5px;
+				// }
+			}
+
+			>div.video_prepic{
+				position: absolute;
+				width: 750px;
+				height: 562.5px;
+				background: rgba(0, 0, 0, 0);
+				bottom: 0;
+
+				>img{
+					width: 100%;
+					height: 100%;
+					display: block;
+				}
+
+				>span{
+					position: relative;
+					display: block;
+					margin: 0 auto;
+					top: 50%;
+					transform: translateY(-50%);
+					-ms-transform: translateY(-50%); 	/* IE 9 */
+					-moz-transform: translateY(-50%); 	/* Firefox */
+					-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+					-o-transform: translateY(-50%); 	/* Opera */
+					font-size: 140px;
+					font-weight: 400;
+					color: #fff;
+					text-align: center;
+				}
+			}
+
+			>div.video_cancel{
+				position: absolute;
+				top: 20px;
+				right: 30px;
+				color: #fff;
+				font-size: 44px;
+				z-index: 1;
+			}
+		}
+	}
+
+	>.title_input{
+		position: relative;
+		margin: 30px 0;
+		border-bottom: solid 20px #efefef; 
+
+		>textarea{
+			width: 100%;
+			font-size: 28px;
+			padding: 0 30px;
+		}
+
+		>p{
+			height: 32px;
+
+			>span{
+				font-size: 30px;
+				float: right;
+				color: #adadad;
+			}
+		}
+	}
+
+	>div.control{
+		padding: 23px 23px 0 23px;
+		// border-bottom: 18px solid #efefef;
+		padding-bottom: 126px;
+		// margin-top: -108px;
+
+		>p{
+			line-height: 1;
+			padding-bottom: 20px;
+
+			 >label{
+			 	font-size: 30px;
+			 	color: #adadad;
+			 	float: left;
+
+			 	>input[type=checkbox]{
+				 	width: 25px;
+				 	height: 25px;
+				 	appearance: checkbox;
+					-moz-appearance: checkbox; /* Firefox */
+					-webkit-appearance: checkbox; /* Safari 和 Chrome */
+					margin-right: 10px;
+				 }
+
+				 >b{
+				 	font-weight: 500;
+				 }
+			 }
+
+			 >b{
+			 	color: @iconColor;
+			 	font-size: 24px;
+			 	display: block;
+			 }
+
+			 >span{
+			 	color: #adadad;
+			 	font-size: 24px;
+			 	display: block;
+			 }
+		}
+
+		>p.note{
+			line-height: 1.5;
+		}
+	}
+}
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	height: 108px;
+	width: 100%;
+	background: #e0e0e0;
+	// padding: 18px 0;
+	margin-top: -108px;
+
+	>div.submit_btn{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background: #009688;
+		text-align: center;
+
+		>span{
+			line-height: 106px;
+			height: 100%;
+			font-size: 32px;
+			color: #fff;
+		}
+	}
+}
+
+/**----------------------------------------------------------------------tips------------------------------------------------------------------------**/
+.tips{
+	position: fixed;
+	width: 750px;
+	height: 100%;
+	top: 0;
+	background: rgba(0, 0, 0, 0.5);
+	margin: 0 auto;
+	left: 50%;
+	z-index: 2;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%); 	/* IE 9 */
+	-moz-transform: translateX(-50%); 	/* Firefox */
+	-webkit-transform: translateX(-50%); /* Safari 和 Chrome */
+	-o-transform: translateX(-50%); 	/* Opera */
+
+	.tip_box{
+		// width: 538px;
+		// height: 222px;
+		padding: 64px 64px;
+		background: #fff;
+		text-align: center;
+		z-index: 1;
+		position: fixed;
+		border-radius: 30px 30px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%); 	/* IE 9 */
+		-moz-transform: translate(-50%, -50%); 	/* Firefox */
+		-webkit-transform: translate(-50%, -50%); /* Safari 和 Chrome */
+		-o-transform: translate(-50%, -50%); 	/* Opera */
+
+		>span{
+			position: relative;
+			font-size: 32px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			display: block; 
+			font-weight: 900;
+			border-bottom: 1px solid #e0e0e0;
+		}
+
+		>p{
+			position: relative;
+			font-size: 30px;
+			height: 90px;
+			color: #fff;
+
+			>input{
+				width: 50%;
+				height: 100%;
+				position: absolute;
+				background: #fff;
+				color: #009688;
+				font-size: 32px;
+				font-weight: 900;
+			}
+
+			>input[name=cancel]{
+				left: 0;
+				border-radius: 0 0 0 30px;
+				border-right: 1px solid #e0e0e0;
+			}
+
+			>input[name=confirm]{
+				right: 0;
+				border-radius: 0 0 30px 0;
+			}	
+		}
+
+		>img{
+			display: block;
+			width: 64px;
+			height: 64px;
+		}
+	}
+}
+
+@import 'aliplayer-min.less';
